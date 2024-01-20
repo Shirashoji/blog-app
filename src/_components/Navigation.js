@@ -25,7 +25,7 @@ const navItems = [
     target: "_blank",
   },
 ];
-
+const title = "Blog App";
 function Navigation(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -36,7 +36,7 @@ function Navigation(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        Chofu Population Vis
+        {title}
       </Typography>
       <Divider />
       <List>
@@ -81,7 +81,7 @@ function Navigation(props) {
               display: { xs: "none", sm: "block" },
             }}
           >
-            Chofu Population Vis
+            {title}
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map(({ item, link, target }) => (
