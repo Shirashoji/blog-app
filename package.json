@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "source .env && next dev --port $APPLICATION_PORT",
+    "dev": "dotenv -- bash -c 'next dev --port $APPLICATION_PORT'",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -32,6 +32,7 @@
     "@types/node": "20.11.1",
     "@types/react": "18.2.47",
     "autoprefixer": "^10.0.1",
+    "dotenv-cli": "^7.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "postcss": "^8",

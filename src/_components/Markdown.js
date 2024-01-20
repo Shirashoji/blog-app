@@ -9,7 +9,6 @@ import "@/styles/markdown.css";
 
 function Markdown(props) {
   const { content } = props;
-  console.log("content", content);
   const { data, content: markdownContent } = matter(content);
   return (
     <div className="markdown-body">

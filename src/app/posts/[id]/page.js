@@ -4,8 +4,6 @@ import Date from "@/_components/date";
 import Markdown from "@/_components/Markdown";
 
 const fetchData = async (host, id) => {
-  console.log(id);
-  console.log("url", `http://${host}/api/blog/contents/${id}`);
   const res = await fetch(`http://${host}/api/blog/contents/${id}`, {
     cache: "no-store",
   });
